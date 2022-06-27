@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/bin/bash
 x=12
 y=14
 z=(x+y)
