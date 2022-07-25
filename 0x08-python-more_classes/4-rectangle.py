@@ -38,4 +38,3 @@ class Rectangle:
 
     @property
     def width(self):
-
