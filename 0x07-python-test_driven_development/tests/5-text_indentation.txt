@@ -1,0 +1,52 @@
+Test all delimeter with spaces at ends:
+>>> text_indentation("Hello   :     Holberton    ?    school.    fooo     ")
+Hello:
+<BLANKLINE>
+Holberton?
+<BLANKLINE>
+school.
+<BLANKLINE>
+fooo
+Test just delimeter:
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+Test string with the spaces:
+>>> text_indentation("    Holberton")
+Holberton
+Test just delimeters:
+>>> text_indentation("  ?  ")
+?
+<BLANKLINE>
+Test nonindent inside indent
+>>> text_indentation("?Hello.")
+?
+<BLANKLINE>
+Hello.
+<BLANKLINE>
+Test existing newline:
+>>> text_indentation("?\n\n.\n\n:")
+?
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+.
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+:
+<BLANKLINE>
+Test none:
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+Test num:
+>>> text_indentation(33)
+Traceback (most recent call last):
+...
+
