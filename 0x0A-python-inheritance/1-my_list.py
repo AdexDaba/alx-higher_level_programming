@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-"""Contains `MyList` class"""
+"""
+This module implements a custom list object
+"""
 
 
 class MyList(list):
-    """Class that extends the list base class"""
-
+    """Custom List
+    """
     def print_sorted(self):
-        """Prints a sorted list"""
+        """
+        prints the list, but sorted (ascending sort)
+        """
         print(sorted(self))
